@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>ex</title>
+    <title>12-4</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,22 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
   </head>
-  <body>  
+  <body> 
+    <div class="container">
+      <h3>Tooltip Example</h3>
+      <p>Tooltips are not CSS-only plugins, and must therefore be initialized with jQuery: select the specified element and call the tooltip() method.</p>
+      <a href="#" data-toggle="tooltip" title="Hooray!" class="tool_tip">Hover over me</a>
+       
+      <h3>工具提示範例2</h3>
+      <p>Tooltips are not CSS-only plugins, and must therefore be initialized with jQuery: select the specified element and call the tooltip() method.</p>
+      <a href="#" data-toggle="tooltip" title="工具提示範例2!" class="tool_tip">Hover over me</a>
+    </div>
+     
+    <script>
+      $(document).ready(function(){
+          $('.tool_tip').tooltip();   
+      });
+    </script> 
 
 
 
