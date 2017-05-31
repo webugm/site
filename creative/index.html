@@ -68,7 +68,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
+    <header class="top-content">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
@@ -274,6 +274,17 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+    <!--  -->
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.top-content').backstretch([
+           "img/header.jpg"
+         , "img/2.jpg"
+         , "img/1.jpg"
+         ], {duration: 3000, fade: 750});
+      });
+    </script>
 
 </body>
 
